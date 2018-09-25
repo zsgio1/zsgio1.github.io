@@ -1,0 +1,512 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    background: #fcfcfc;
+    justify-content: top;
+    align-content: top;
+    align-items: top;
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.8;
+}
+
+header {
+    width: 100%;
+    padding: 10vh;
+    justify-content: top;
+    position: fixed;
+    background-color: #0d1d7a;
+    box-shadow: 1px 0px 30px -10px black;
+    z-index: 100;
+    top: 0;
+}
+
+section {
+    margin-top: 70px;
+    justify-content: center;
+}
+
+main {
+    height: 85vh;
+    display: grid;
+}
+
+main img {
+    width: 12vw;
+    vertical-align: top;
+}
+
+.main_logo {
+    display: block;
+    width: 30vw;
+    grid-area: 3/4;
+}
+
+.melbourne {
+    grid-area: 2/2;
+}
+
+.canberra {
+    grid-area: 4/5;
+}
+
+.sydney {
+    grid-area: 5/3;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+nav a {
+    font-family: 'Signika', sans-serif;
+    color: #e5f7ff;
+}
+
+main {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+}
+
+intro {
+    grid-gap: 2vw;
+    display: grid;
+    background-color: #e5f7ff;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+
+intro img,
+program img {
+    width: 18vh;
+    height: 18vh;
+    border-radius: 50%;
+}
+
+.heading {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;
+    padding-bottom: 3vh;
+}
+
+intro .title {
+    font-family: 'Lora', serif;
+    font-size: 28px;
+}
+
+.about {
+    display: grid;
+    grid-template-rows: 20vh 75px auto 30px;
+}
+
+program {
+    grid-gap: 1vw;
+    display: grid;
+    background-color: #fcfcfc;
+    text-align: center;
+}
+
+.film {
+    display: grid;
+    grid-template-rows: 20vh 75px auto 30px;
+    margin-bottom: 5vmin;
+}
+
+.datetix {
+    display: grid;
+    grid-template-columns: auto 35%;
+    height: auto;
+    text-align: left;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+
+.datetix p {
+    margin: 0;
+}
+
+program .title {
+    font-family: 'Lora', serif;
+    font-size: 24px;
+}
+
+button {
+    background: #ef1c86;
+    border: 0;
+    border-radius: 0.4vmin;
+    color: white;
+    width: 18vmin;
+    font-family: 'Rubik', sans-serif;
+    box-shadow: 1px 0px 10px -5px black;
+}
+
+news_featured {
+    display: grid;
+    background-color: #e5f7ff;
+}
+
+news .title,
+featured .title {
+    font-family: 'Lora', serif;
+    font-size: 22px;
+}
+
+news {
+    display: grid;
+    padding-right: 2vw;
+    padding-left: 4vw;
+}
+
+featured {
+    display: grid;
+    padding-right: 4vw;
+    padding-left: 2vw;
+}
+
+news img {
+    float: left;
+    width: 13vh;
+    height: 13vh;
+    border-radius: 50%;
+    margin: 1.2vmin;
+    margin-right: 2vw;
+}
+
+news .heading,
+featured .heading {
+    padding-bottom: 0;
+}
+
+.video {
+    background: #d3dbde;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    position: relative;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+follow {
+    background-color: #ef1c86;
+    display: grid;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+follow .heading {
+    padding-bottom: 0px;
+}
+
+follow img,
+sponsors img {
+    width: 3vw;
+    height: auto;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+socials {
+    margin: auto auto auto auto;
+}
+
+input {
+    box-sizing: border-box;
+    padding: 8px;
+    height: 40px;
+    width: 60%;
+    margin-left: 7vw;
+    margin-top: 3px;
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+    border-radius: 0.4vmin;
+    border: 0;
+}
+
+follow button {
+    background: #fffaa0;
+    color: black;
+    height: 40px;
+    width: 8vw;
+    font-size: 15px;
+    margin-left: 1vw;
+}
+
+sponsors {
+    display: grid;
+    background-color: #fcfcfc;
+    justify-content: center;
+    padding: 30px;
+}
+
+sponsors img {
+    width: 14vw;
+    vertical-align: middle;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+footer {
+    background-color: #0d1d7a;
+    text-align: center;
+    padding: 30px;
+    color: #e5f7ff;
+}
+
+footer a {
+    color: #e5f7ff;
+}
+
+/* Desktop layout */
+
+@media ( min-width:1200px) {
+
+    .mobile {
+        display: none;
+    }
+
+    header {
+        line-height: 60px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 40px;
+        padding: 10px;
+        width: 100vw;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    img {
+        width: 80px;
+    }
+
+    nav {
+        line-height: 60px;
+        font-size: 18px;
+        text-align: right;
+        margin-right: 100px;
+    }
+
+    nav a {
+        margin-left: 6vmin;
+    }
+    
+    main {
+        grid-template-columns: 15vw 8vw 7vw 40vw 5vw 10vw 15vw;
+        grid-template-rows: 7vh 2vh 15vh 30vh auto;
+    }
+
+    intro {
+        grid-template-columns: repeat(4, 23.3%);
+    }
+
+    intro .heading {
+        grid-column-end: span 4;
+    }
+
+    program {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        grid-template-columns: repeat(3, 32.5%);
+    }
+
+    program .heading {
+        grid-column-end: span 3;
+    }
+
+    news_featured {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        grid-template-columns: 50% 50%;
+    }
+    
+    follow {
+        grid-template-columns: auto auto;
+    }
+
+}
+
+/* Mobile layout */
+
+@media ( max-width:500px) {
+
+    .desktop {
+        display: none;
+    }
+
+    header {
+        padding: 15px;
+        position: fixed;
+    }
+
+    header img {
+        width: 80px;
+        margin-left: 15px;
+    }
+
+    nav.mobile {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #0d1d7a;
+        width: 75vw;
+        height: 100vh;
+        padding: 60px 40px;
+        padding-top: 120px;
+        transform: translateX(75vh);
+    }
+
+    nav.mobile a {
+        display: block;
+        padding: 20px;
+        z-index: 200;
+        font-size: 20px;
+    }
+
+    #burger {
+        width: 70px;
+        padding: 12px;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 300;
+    }
+
+    #burger .line {
+        background-color: #ffffff;
+        height: 4px;
+        margin-bottom: 10px;
+        transition: 0.5s;
+        border-radius: 5px;
+    }
+
+    .menu-open #line1 {
+        transform: translateY(14px) rotate(45deg);
+    }
+
+    .menu-open #line2 {
+        opacity: 0;
+    }
+
+    .menu-open #line3 {
+        transform: translateY(-14px) rotate(135deg);
+    }
+
+    .menu-open nav.mobile {
+        transform: translateX(0vw);
+        transition: 0.5s;
+    }
+
+    main {
+        margin-top: 80px;
+        grid-template-columns: 5vw 5vw 5vw 55vw 5vw 10vw 15vw;
+        grid-template-rows: 5vh 12vh 35vh 7vh auto;
+        background-position: center;
+    }
+
+    main img {
+        width: 30vw;
+        vertical-align: top;
+    }
+
+    .main_logo {
+        display: block;
+        width: 70vw;
+        grid-area: 3/4;
+    }
+
+    .melbourne {
+        grid-area: 2/2;
+    }
+
+    .canberra {
+        grid-area: 4/5;
+    }
+
+    .sydney {
+        grid-area: 5/3;
+    }
+    
+    .heading {
+        padding-bottom: 0;
+    }
+
+    intro, program, news_featured, follow {
+        padding: 20px;
+        
+    }
+    
+    program {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .datetix {
+        justify-content: center;
+        grid-gap: 5vw;
+        font-size: 18px;
+    }
+    
+    button {
+        width: 30vw;
+        height: 5vh;
+    }
+    
+    news_featured img {
+        margin-right: 20px;
+    }
+    
+    follow img {
+        width: 13vw;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
+    follow button {
+        width: auto;
+        padding: 10px;
+    }
+    
+    sponsors img {
+        width: 70%;
+        margin: auto;
+        display: block;
+        padding-bottom: 5vh;
+    }
+    
+}
